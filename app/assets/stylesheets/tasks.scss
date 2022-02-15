@@ -1,3 +1,44 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  display: table-cell;
+  background-color: #FFEDDB;
+  color: #362222;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+.button {
+  border: 1px solid #FF6D6D;
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.lien {
+  text-decoration: none;
+  color: #FF6D6D;
+}
+
+.lien:hover {
+  color: #AE4CCF;
+}
+
+h1 {
+  text-align: center;
+}
+

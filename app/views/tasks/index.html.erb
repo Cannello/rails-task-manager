@@ -1,6 +1,20 @@
+<h1>My Tasks</h1>
+
+<br>
+
 <ul>
   <% @tasks.each do |task| %>
-    <li><%= task.title %> - <%= task.details %> - <%= task.completed %> - <%= link_to "View", task_path(task) %>
+    <li><%= task.title %> - <%= task.details %> - <%= task.completed %> - <%= link_to "View", task_path(task), class: "lien" %> <%= link_to "Edit", edit_task_path(task), class: "lien" %>
+    <%= link_to "Delete",
+            task_path(task),
+            method: :delete,
+            data: { confirm: "Are you sure?" }, class: "lien" %>
     </li>
   <% end %>
 </ul>
+
+<br>
+
+<div class="button">
+<%= link_to "Create a task", new_task_path, class: "lien" %>
+</div>
